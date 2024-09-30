@@ -31,6 +31,7 @@ public class Main
         Room poolArea = new Room("Pool Area");
 
         Door doorToGarden = new Door("Door to Garden");
+        doorToGarden.setFrontDoor(true);
         Window livingWindow1 = new Window("Living Room Window 1");
         Window livingWindow2 = new Window("Living Room Window 2");
 
@@ -39,6 +40,7 @@ public class Main
         livingRoom.addWindow(livingWindow2);
 
         Door garagePort = new Door("Garage Port");
+        garagePort.setFrontDoor(true);
         Door garageToHallway = new Door("Garage To Hallway Door");
         Window garageWindow = new Window("Garage Window");
 
@@ -84,6 +86,7 @@ public class Main
         bedroom5.addWindow(bedroom5Window);
 
         Door hallwayDoor = new Door("Front Door");
+        hallwayDoor.setFrontDoor(true);
         Window hallwayWindow = new Window("Hallway Window");
 
         hallway.addDoor(hallwayDoor);

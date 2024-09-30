@@ -53,7 +53,7 @@ public class Room
 
         for (Detector d: detectors)
         {
-            if(d.checkType().equals("MotionDetector"))
+            if(d.checkType().equals("MotionDetector") && d.getActivated())
             {
                 hasDetector = true;
             }

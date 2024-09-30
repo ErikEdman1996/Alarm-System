@@ -82,10 +82,17 @@ public class CentralUnit
                         }
                         break;
                     case "WindowDetector":
+                        if(activated)
+                        {
+                            soundAlarm = true;
+                        }
                         break;
                     case "MotionDetector":
+                        if(activated)
+                        {
+                            soundAlarm = true;
+                        }
                         break;
-
                     default:
                         break;
                 }

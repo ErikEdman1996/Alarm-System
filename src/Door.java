@@ -2,12 +2,14 @@ public class Door
 {
     private String name;
     private Boolean isOpen;
+    private Boolean isFrontDoor;
     private DoorDetector detector;
 
     public Door(String n)
     {
         name = n;
         isOpen = false;
+        isFrontDoor = false;
         detector = new DoorDetector(name);
     }
 
@@ -37,4 +39,11 @@ public class Door
         return detector;
     }
 
+    public Boolean getFrontDoor() {
+        return isFrontDoor;
+    }
+
+    public void setFrontDoor(Boolean frontDoor) {
+        isFrontDoor = frontDoor;
+    }
 }
